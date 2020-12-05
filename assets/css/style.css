@@ -621,7 +621,10 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f5ff;
+  background-color: #2c2f33;
+}
+.section-bg-dark{
+  background-color: #23272a;
 }
 
 .section-title {
@@ -915,7 +918,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #f5f5ff;
+  background: #2c2f33;
   padding: 70px 0 60px;
 }
 
