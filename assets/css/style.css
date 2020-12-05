@@ -396,6 +396,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   background: url("../img/hero-bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -873,7 +877,7 @@ section {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #a989ff;
+  background: #2c2f33;
   transition: ease-in-out 0.3s;
 }
 
