@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Commands &middot; RAVEN discord bot</title>
+  <title>FAQ &middot; RAVEN discord bot</title>
   <meta name="description" content="Upgrade your discord server with RAVEN" />
   <meta itemprop="name" content="Home &middot; RAVEN discord bot" />
   <meta itemprop="description" content="Upgrade your discord server with RAVEN" />
@@ -56,8 +56,8 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="commands.html">Commands</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="commands.html">Commands</a></li>
+          <li class="active"><a href="faq.html">FAQ</a></li>
           <li><a href="https://discord.com/oauth2/authorize?client_id=737022433336361111&permissions=8&scope=bot">Add to
               discord</a></li>
           <li><a href="https://discord.gg/MxAkkABMYh">Support server</a></li>
@@ -70,16 +70,103 @@
 
 
   <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
 
-    <section class="section-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col" style="text-align: center;">
-                    <h1>This page is currently under maintenance!</h1>
-                </div>
-            </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>FAQ</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Frequently Asked Questions</li>
+          </ol>
         </div>
-      </section><!-- End Breadcrumbs Section -->
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+
+    <!-- ======= F.A.Q. Section ======= -->
+    <section id="faq" class="accordion section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q.</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <div class="collapse-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
+                href="#collapse-list-1">How do I add RAVEN to my server?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="collapse-list-1" class="collapse show" data-parent=".collapse-list">
+                <p>
+                  You can add RAVEN to your server using <a class="p-0 d-inline-block"
+                    href="https://discord.com/oauth2/authorize?client_id=737022433336361111&permissions=8&scope=bot">this</a>
+                  link
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-2"
+                class="collapsed">How do I change the prefix?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="collapse-list-2" class="collapse" data-parent=".collapse-list">
+                <p>
+                  You can change RAVEN's prefix with <code>.setprefix [PREFIX]</code>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-3"
+                class="collapsed">RAVEN won't respond to any commands, what can i do? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="collapse-list-3" class="collapse" data-parent=".collapse-list">
+                <p>
+                  It's likely that you're using the wrong prefix, you can ping <code>@RAVEN</code> to get the prefix
+                  he's using
+                  and try running them again.<br>
+                  If RAVEN still isn't responding to commands with the correct prefix then you should enable error
+                  messages with <code>.errors enable</code><br><br>
+                  Also check if he has all required permissions (send messages, embed links).
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-4"
+                class="collapsed">How can I report Bugs?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="collapse-list-4" class="collapse" data-parent=".collapse-list">
+                <p>
+                  1. Join the <a class="p-0 d-inline-block" href="https://discord.gg/MxAkkABMYh">Support Server</a><br>
+                  2. Open a new ticket in the <code>support</code> channel
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-5"
+                class="collapsed">How can I upvote RAVEN?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="collapse-list-5" class="collapse" data-parent=".collapse-list">
+                <p>
+                  You can upvote RAVEN using <a class="p-0 d-inline-block"
+                    href="https://top.gg/bot/737022433336361111/vote">this</a>
+                  link
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+
 
   </main><!-- End #main -->
   <footer id="footer">
@@ -150,25 +237,6 @@
   <!-- Import JS Files -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/typer.js"></script>
-  <!-- Search script -->
-  <script>
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("search");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("cmdlist");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-    </script>
 
 </body>
 

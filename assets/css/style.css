@@ -671,7 +671,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #fafaff;
+  background-color: #23272A;
   min-height: 40px;
   margin-top: 80px;
 }
@@ -992,31 +992,48 @@ section {
 .details .content p:last-child {
   margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+# Commands
+--------------------------------------------------------------*/
+
+.list-group-item{
+  background-color: #23272A;
+  color: #FFFFFF;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+  background-color: #2C2F33;
+  color: #FFFFFF;
+}
+.list-group-item.active {
+  background-color:#5d3db3;
+  border-color: #5d3db3;
+}
+
 
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
-.faq .faq-list {
+.accordion .collapse-list {
   padding: 0;
 }
 
-.faq .faq-list ul {
+.accordion .collapse-list ul {
   padding: 0;
   list-style: none;
 }
 
-.faq .faq-list li + li {
+.accordion .collapse-list li + li {
   margin-top: 15px;
 }
 
-.faq .faq-list li {
+.accordion .collapse-list li {
   padding: 20px;
   background: #23272A;
   border-radius: 4px;
   position: relative;
 }
 
-.faq .faq-list a {
+.accordion .collapse-list a {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1027,7 +1044,18 @@ section {
   outline: none;
 }
 
-.faq .faq-list .icon-help {
+.commands .collapse-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px 0 0;
+  outline: none;
+}
+
+.accordion .collapse-list .icon-help {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -1035,40 +1063,40 @@ section {
   color: #a989ff;
 }
 
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+.accordion .collapse-list .icon-show, .accordion .collapse-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.faq .faq-list p {
+.accordion .collapse-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.faq .faq-list .icon-show {
+.accordion .collapse-list .icon-show {
   display: none;
 }
 
-.faq .faq-list a.collapsed {
+.accordion .collapse-list a.collapsed {
   color: #fff;
 }
 
-.faq .faq-list a.collapsed:hover {
+.accordion .collapse-list a.collapsed:hover {
   color: #a989ff;
 }
 
-.faq .faq-list a.collapsed .icon-show {
+.accordion .collapse-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.faq .faq-list a.collapsed .icon-close {
+.accordion .collapse-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1200px) {
-  .faq .faq-list {
+  .accordion .collapse-list {
     padding: 0;
   }
 }

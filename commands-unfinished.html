@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Commands &middot; RAVEN discord bot</title>
+  <meta name="description" content="Upgrade your discord server with RAVEN" />
+  <meta itemprop="name" content="Home &middot; RAVEN discord bot" />
+  <meta itemprop="description" content="Upgrade your discord server with RAVEN" />
+  <meta property="og:title" content="Home &middot; RAVEN discord bot" />
+  <meta property="og:description" content="Upgrade your discord server with RAVEN" />
+  <meta name="twitter:title" content="Home &middot; RAVEN discord bot" />
+  <meta name="twitter:card" content="Upgrade your discord server with RAVEN" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="INDEX, FOLLOW">
+
+  <!-- Favicons -->
+  <link href="favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Import CSS Files -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/typer.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>RAVEN</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="commands.html">Commands</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="https://discord.com/oauth2/authorize?client_id=737022433336361111&permissions=8&scope=bot">Add to
+              discord</a></li>
+          <li><a href="https://discord.gg/MxAkkABMYh">Support server</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Commands</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Commands</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <!-- ======= Commands Section ======= -->
+    <section id="commands" class="accordion commands section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-config-list" data-toggle="list"
+                href="#list-config" role="tab" aria-controls="home">Config</a>
+              <a class="list-group-item list-group-item-action" id="list-currency-list" data-toggle="list"
+                href="#list-currency" role="tab" aria-controls="profile">Currency</a>
+              <a class="list-group-item list-group-item-action" id="list-fun-list" data-toggle="list" href="#list-fun"
+                role="tab" aria-controls="messages">Fun</a>
+              <a class="list-group-item list-group-item-action" id="list-general-list" data-toggle="list"
+                href="#list-general" role="tab" aria-controls="settings">General</a>
+              <a class="list-group-item list-group-item-action" id="list-image-list" data-toggle="list"
+                href="#list-image" role="tab" aria-controls="settings">Image</a>
+              <a class="list-group-item list-group-item-action" id="list-information-list" data-toggle="list"
+                href="#list-information" role="tab" aria-controls="settings">Information</a>
+              <a class="list-group-item list-group-item-action" id="list-logging-list" data-toggle="list"
+                href="#list-logging" role="tab" aria-controls="settings">Logging</a>
+              <a class="list-group-item list-group-item-action" id="list-moderation-list" data-toggle="list"
+                href="#list-moderation" role="tab" aria-controls="settings">Moderation</a>
+              <a class="list-group-item list-group-item-action" id="list-text-list" data-toggle="list" href="#list-text"
+                role="tab" aria-controls="settings">Text</a>
+              <a class="list-group-item list-group-item-action" id="list-ticket-list" data-toggle="list"
+                href="#list-ticket" role="tab" aria-controls="settings">Ticket</a>
+              <a class="list-group-item list-group-item-action" id="list-utility-list" data-toggle="list"
+                href="#list-utility" role="tab" aria-controls="settings">Utility</a>
+              <a class="list-group-item list-group-item-action" id="list-voice-list" data-toggle="list"
+                href="#list-voice" role="tab" aria-controls="settings">Voice</a>
+            </div>
+          </div>
+          <div class="col-8">
+            
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-config" role="tabpanel" aria-labelledby="list-config-list">
+              
+                <div class="collapse-list">
+                  <input id="search" onkeyup="myFunction()" class="form-control mb-3" type="text" placeholder="Search...">
+                  <ul id="cmdlist">
+                    <li data-aos="fade-up">
+                      <a data-toggle="collapse" class="collapse" href="#collapse-list-1">
+                        .setprefix<br><small class="text-white">changes the bot prefix for the current guild
+                        </small>
+                        <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="collapse-list-1" class="collapse show" data-parent=".collapse-list">
+                        <p>
+                          You can add RAVEN to your server using <a class="p-0 d-inline-block"
+                            href="https://discord.com/oauth2/authorize?client_id=737022433336361111&permissions=8&scope=bot">this</a>
+                          link
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" data-aos-delay="100">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-2"
+                        class="collapsed">How do I change the prefix?<i class="bx bx-chevron-down icon-show"></i><i
+                          class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="collapse-list-2" class="collapse" data-parent=".collapse-list">
+                        <p>
+                          You can change RAVEN's prefix with <code>.setprefix [PREFIX]</code>
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" data-aos-delay="200">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-3"
+                        class="collapsed">RAVEN won't respond to any commands, what can i do? <i
+                          class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="collapse-list-3" class="collapse" data-parent=".collapse-list">
+                        <p>
+                          It's likely that you're using the wrong prefix, you can ping <code>@RAVEN</code> to get the prefix
+                          he's using
+                          and try running them again.<br>
+                          If RAVEN still isn't responding to commands with the correct prefix then you should enable error
+                          messages with <code>.errors enable</code><br><br>
+                          Also check if he has all required permissions (send messages, embed links).
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" data-aos-delay="300">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-4"
+                        class="collapsed">How can I report Bugs?<i class="bx bx-chevron-down icon-show"></i><i
+                          class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="collapse-list-4" class="collapse" data-parent=".collapse-list">
+                        <p>
+                          1. Join the <a class="p-0 d-inline-block" href="https://discord.gg/MxAkkABMYh">Support Server</a><br>
+                          2. Open a new ticket in the <code>support</code> channel
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" data-aos-delay="400">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#collapse-list-5"
+                        class="collapsed">How can I upvote RAVEN?<i class="bx bx-chevron-down icon-show"></i><i
+                          class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="collapse-list-5" class="collapse" data-parent=".collapse-list">
+                        <p>
+                          You can upvote RAVEN using <a class="p-0 d-inline-block"
+                            href="https://top.gg/bot/737022433336361111/vote">this</a>
+                          link
+                        </p>
+                      </div>
+                    </li>
+        
+                  </ul>
+                </div>
+              
+              </div>
+              <div class="tab-pane fade" id="list-currency" role="tabpanel" aria-labelledby="list-currency-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-fun" role="tabpanel" aria-labelledby="list-fun-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-general" role="tabpanel" aria-labelledby="list-general-list">
+                
+
+
+
+              </div>
+              <div class="tab-pane fade" id="list-image" role="tabpanel" aria-labelledby="list-image-list">
+                
+
+
+
+              </div>
+              <div class="tab-pane fade" id="list-information" role="tabpanel" aria-labelledby="list-information-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-logging" role="tabpanel" aria-labelledby="list-logging-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-moderation" role="tabpanel" aria-labelledby="list-moderation-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-text" role="tabpanel" aria-labelledby="list-text-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-ticket" role="tabpanel" aria-labelledby="list-ticket-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-utility" role="tabpanel" aria-labelledby="list-utility-list">
+                
+
+
+              </div>
+              <div class="tab-pane fade" id="list-voice" role="tabpanel" aria-labelledby="list-voice-list">
+                
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main><!-- End #main -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h3>RAVEN</h3>
+            <p>
+              Upgrade your discord server!
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="commands.html">Commands</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a
+                  href="https://discord.com/oauth2/authorize?client_id=737022433336361111&permissions=8&scope=bot">Add
+                  to discord</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/MxAkkABMYh">Support Server</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>TopGG</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://top.gg/bot/737022433336361111">RAVEN on
+                  top.gg</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://top.gg/bot/737022433336361111/vote">Vote for
+                  RAVEN</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://top.gg/bot/737022433336361111#reviews">Review
+                  RAVEN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        Copyright © theravenstone 2018 -
+        <script>document.write(new Date().getFullYear())</script>
+        <br>
+        All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Import JS Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/typer.js"></script>
+  <!-- Search script -->
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("cmdlist");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+</body>
+
+</html>
