@@ -726,149 +726,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about {
-  padding: 40px 0 0 0;
-}
-
-.about .icon-boxes h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #a989ff;
-  margin-bottom: 15px;
-}
-
-.about .icon-box {
-  margin-top: 40px;
-}
-
-.about .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #a989ff;
-  border-radius: 50px;
-  transition: 0.5s;
-}
-
-.about .icon-box .icon i {
-  color: #a989ff;
-  font-size: 32px;
-}
-
-.about .icon-box:hover .icon {
-  background: #a989ff;
-  border-color: #a989ff;
-}
-
-.about .icon-box:hover .icon i {
-  color: #7656CC;
-}
-
-.about .icon-box .title {
-  margin-left: 85px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.about .icon-box .title a {
-  color: #343a40;
-  transition: 0.3s;
-}
-
-.about .icon-box .title a:hover {
-  color: #a989ff;
-}
-
-.about .icon-box .description {
-  margin-left: 85px;
-  line-height: 24px;
-  font-size: 14px;
-}
-
-.about .video-box {
-  background: url("../img/about.png") center center no-repeat;
-  background-size: contain;
-  min-height: 300px;
-}
-
-.about .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#3f43fd 50%, rgba(63, 67, 253, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.about .play-btn::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn::before {
-  content: '';
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(63, 67, 253, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Features
@@ -961,37 +818,6 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Details
---------------------------------------------------------------*/
-.details .content + .content {
-  margin-top: 100px;
-}
-
-.details .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-  color: #a989ff;
-}
-
-.details .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.details .content ul li {
-  padding-bottom: 10px;
-}
-
-.details .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #a989ff;
-}
-
-.details .content p:last-child {
-  margin-bottom: 0;
-}
 /*--------------------------------------------------------------
 # Commands
 --------------------------------------------------------------*/
@@ -1099,6 +925,20 @@ section {
   .accordion .collapse-list {
     padding: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Custom Input's
+--------------------------------------------------------------*/
+
+#search_input{
+    color: #ffffff;
+    background-color: #23272a!important;
+    border-color: #23272a;
+}
+.form-control:focus{
+    border-color: #a989ff;
+    box-shadow: 0 0 0 0.2rem rgba(169,137,255,.25);
 }
 
 /*--------------------------------------------------------------
@@ -1255,4 +1095,16 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+/*--------------------------------------------------------------
+# Changelog
+--------------------------------------------------------------*/
+.changelog-margin-left{
+    margin-left: 12px;
+}
+.changelog-margin-left:before{
+    content: "• "
+}
+.changelog-margin-left-no-content:before{
+    content: ""
 }
