@@ -1139,3 +1139,7 @@ section {
 .changelog-margin-left-no-content:before{
     content: ""
 }
+#changelog_ul tr td a{
+    padding: 0!important;
+    display: inline-block!important;
+}
