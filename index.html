@@ -337,14 +337,14 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="count-box rounded zoom">
-                        <span class="d-inline-block" data-toggle="counter-up">370</span><span class="d-inline-block">+</span>
+                        <span class="d-inline-block" data-toggle="counter-up">400</span><span class="d-inline-block">+</span>
                         <p>Total Servers</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                     <div class="count-box rounded zoom">
-                        <span class="d-inline-block" data-toggle="counter-up">160000</span><span class="d-inline-block">+</span>
+                        <span class="d-inline-block" data-toggle="counter-up">176000</span><span class="d-inline-block">+</span>
                         <p>Total Members</p>
                     </div>
                 </div>
@@ -363,6 +363,13 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <canvas id="servers-chart" class="chartjs-render-monitor"></canvas>
+                </div>
             </div>
         </div>
     </section>
@@ -527,6 +534,47 @@
 <!-- Import JS Files -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/typer.js"></script>
+<script src="assets/js/chart.js"></script>
+
+<script>
+var ctx = document.getElementById('servers-chart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['15.Nov.2020', '30.Nov.2020', '15.Dev.2020', '31.Dez.2020', '15.Jan.2021', '31.Jan.2021'],
+        datasets: [{
+            label: 'RAVEN Server Count',
+            data: [0, 24, 36, 86, 169, 326],
+            backgroundColor: [
+                'rgba(169, 137, 255, 0.2)',
+                'rgba(169, 137, 255, 0.2)',
+                'rgba(169, 137, 255, 0.2)',
+                'rgba(169, 137, 255, 0.2)',
+                'rgba(169, 137, 255, 0.2)',
+                'rgba(169, 137, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(169, 137, 255, 1)',
+                'rgba(169, 137, 255, 1)',
+                'rgba(169, 137, 255, 1)',
+                'rgba(169, 137, 255, 1)',
+                'rgba(169, 137, 255, 1)',
+                'rgba(169, 137, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
 
 </body>
 
