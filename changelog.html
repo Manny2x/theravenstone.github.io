@@ -1411,7 +1411,6 @@
     <div class="container footer-bottom clearfix">
         <div class="copyright">
             Copyright © <a rel="noopener" target="_blank" href="https://github.com/theravenstone">theravenstone</a> 2018 - <span id="currentYear"></span>
-            <script>document.write(new Date().getFullYear())</script>
             <br>
             All rights reserved. Not affiliated with Discord.
         </div>
@@ -1419,6 +1418,9 @@
 </footer>
 <a href="#" class="back-to-top" title="Scroll up"><i class="icofont-simple-up"></i></a>
 <div id="preloader"></div>
+<script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
