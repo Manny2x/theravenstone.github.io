@@ -109,7 +109,7 @@ function TyperSetup() {
   for (let e of document.getElementsByClassName("cursor")) {
     let t = new Cursor(e);
     t.owner = typers[e.dataset.owner];
-    t.owner.cursor = t;
+//    t.owner.cursor = t;
   }
 }
 
