@@ -12,6 +12,10 @@ a {
   color: #a989ff;
 }
 
+.text-dark{
+    color: #2C2F33!important;
+}
+
 
 a:hover {
   color: #a989ff;
