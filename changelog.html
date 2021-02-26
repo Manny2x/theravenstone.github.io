@@ -98,12 +98,233 @@
                         <label for="search_input">Search for Changelogs</label>
                         <input id="search_input" onkeyup="search_filter()" class="form-control mb-3" type="text" placeholder="Search...">
                         <ul id="changelog_ul">
+
+                            <li>
+                                <a data-toggle="collapse" class="collapse" href="#collapse-version-1-6-1"><h3 id="version-1-6-1">Version 1.6.1 (Advanced Moderation)</h3>
+                                    <small class="text-white">Published 26.02.2021</small>
+                                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="collapse-version-1-6-1" class="collapse show" data-parent=".collapse-list">
+                                    <h4 class="mt-5">Added features</h4>
+                                    <p class="changelog-margin-left changelog-margin-left-no-content">Advanced Moderation</p>
+                                    <p class="changelog-margin-left">Automatic Blockers</p>
+                                    <p class="changelog-margin-left">Automatic Punishments</p>
+                                    <p class="changelog-margin-left">Log channel for Warn, Mute, Unmute, Kick, Ban, Unban</p>
+                                    <h4 class="mt-5">Added commands</h4>
+                                    <table class="table text-white">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Commands</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Advanced Moderation</td>
+                                            <td>mod whitelist, mod setlog, mod setmuterole, mod wordblocker, mod inviteblocker, mod settings, mod punishment, mod urlblocker, mod disablelog, mod capsblocker, mute, unmute, warn, warnings, case, caselist, clearwarnings, removewarning</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moderation</td>
+                                            <td>hackban</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Utility</td>
+                                            <td>strawpoll, oldpoll</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Help</td>
+                                            <td>paginatehelp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Memes</td>
+                                            <td>minecraftmemes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Information</td>
+                                            <td>votecheck, emojilist</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currency</td>
+                                            <td>transfer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Image</td>
+                                            <td>cat, dog, panda, redpanda, bird, fox, koala, anime pat, anime wink, anime hug, pikachu</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4 class="mt-5">Updated</h4>
+                                    <table class="table text-white">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Command</th>
+                                            <th scope="col">Changes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>help</td>
+                                            <td>added 1 second cooldown to prevent spamming, added "Example" if command is used to display a command's help. easyhelp view now the main help menu page (help command without args)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>history</td>
+                                            <td>added 400 servers timestamp, added 500 servers timestamp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NSFWChannelRequired error</td>
+                                            <td>added custom error message</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MissingRequiredArgument error</td>
+                                            <td>added custom error message with syntax</td>
+                                        </tr>
+                                        <tr>
+                                            <td>work</td>
+                                            <td>added alias w</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setjoinmessage</td>
+                                            <td>added variables {user.created_at.time_ago} and {user.avatar_url}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>voice</td>
+                                            <td>added alias vc</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ticket</td>
+                                            <td>added alias t</td>
+                                        </tr>
+                                        <tr>
+                                            <td>addrole</td>
+                                            <td>added error if bot does not have permission to add a role to a user</td>
+                                        </tr>
+                                        <tr>
+                                            <td>voice limit</td>
+                                            <td>added error if bot does not have permission to view channel</td>
+                                        </tr>
+                                        <tr>
+                                            <td>banlist</td>
+                                            <td>bot sends multiple messages when the first message should be full with 2000 characters (discord limitations)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>avatar</td>
+                                            <td>added different <a target="_blank" rel="noopener" href="https://prnt.sc/103qs1s">image resolutions</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currency</td>
+                                            <td>added starter money of 5000 coins for every new user</td>
+                                        </tr>
+                                        <tr>
+                                            <td>pepe</td>
+                                            <td>removed NSFW channel required tag</td>
+                                        </tr>
+                                        <tr>
+                                            <td>poll</td>
+                                            <td>poll is now interactive. up to 20 answers can be added</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4 class="mt-5">Fixed</h4>
+                                    <table class="table text-white">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Command</th>
+                                            <th scope="col">Changes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Ticket System</td>
+                                            <td>fixed some errors if support role got deleted and command "ticket new" is executed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>help</td>
+                                            <td>works now in dm channel</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ban</td>
+                                            <td>if reason message is set bot sends it to user, if can not send message to user, pass</td>
+                                        </tr>
+                                        <tr>
+                                            <td>votecheck</td>
+                                            <td>double check (database and api) if author voted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nsfw</td>
+                                            <td>if api does not return with 200, added error message</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setjoinmessage</td>
+                                            <td>you now can just use ".setjoinmessage" to disable the join message</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setdmjoinmessage</td>
+                                            <td>you now can just use ".setdmjoinmessage" to disable the DM join message</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setleavemessage</td>
+                                            <td>you now can just use ".setleavemessage" to disable the leave message</td>
+                                        </tr>
+                                        <tr>
+                                            <td>@RAVEN</td>
+                                            <td>only responds to users not to bots</td>
+                                        </tr>
+                                        <tr>
+                                            <td>wumpus</td>
+                                            <td>fixed error "local variable 'arrowRow' referenced before assignment"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coinflip</td>
+                                            <td>author mention when using random string instead of "heads" or "tails"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>emojiinfo</td>
+                                            <td>added "ago" to created at field (Before: <a target="_blank" rel="noopener" href="https://prnt.sc/10060u9">screenshot</a>)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setprefix</td>
+                                            <td>if prefix is longer than discord limits, the success message could not be sent</td>
+                                        </tr>
+                                        <tr>
+                                            <td>deleterole</td>
+                                            <td>added error message if role is managed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>setguildname</td>
+                                            <td>error message if server name is shorter than 2 characters or longer than 100 characters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>games</td>
+                                            <td>added filter for discord invites</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4 class="mt-5">Deleted</h4>
+                                    <table class="table text-white">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Commands</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Help</td>
+                                            <td>easyhelp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Music</td>
+                                            <td>musicsettings</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             
                             <li>
                                 <a data-toggle="collapse" class="collapse" href="#collapse-version-1-6-0"><h3 id="version-1-6-0">Version 1.6.0 (Music v2 update)</h3>
                                     <small class="text-white">Published 31.01.2021</small>
                                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="collapse-version-1-6-0" class="collapse show" data-parent=".collapse-list">
+                                <div id="collapse-version-1-6-0" class="collapse" data-parent=".collapse-list">
                                     <h4 class="mt-5">Added features</h4>
                                     <p class="changelog-margin-left">Bot now works also in DM channels</p>
                                     <h4 class="mt-5">Added commands</h4>
